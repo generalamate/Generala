@@ -31,22 +31,25 @@ get "/generala" do
 end
 
 post "/tirar" do
+    inicializar_contador
     @@dado1 = obtenerValorDado
     @@dado2 = obtenerValorDado
     @@dado3 = obtenerValorDado
     @@dado4 = obtenerValorDado
     @@dado5 = obtenerValorDado
     @@poker = validaPoker
-    inicializar_contador
     erb :tablero
 end
 
 get "/tirar/:dados" do |dados|
-    @@dado1 = dados[0]
-    @@dado2 = dados[1]
-    @@dado3 = dados[2]
-    @@dado4 = dados[3]
-    @@dado5 = dados[4]
+    inicializar_contador
+    @@dado1 = dados[0].to_i
+    @@dado2 = dados[1].to_i
+    @@dado3 = dados[2].to_i
+    @@dado4 = dados[3].to_i
+    @@dado5 = dados[4].to_i
+    @@poker = validaPoker
+    erb:tablero
 end
 
 post "/guardarJugador1" do
