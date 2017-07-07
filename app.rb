@@ -8,6 +8,14 @@ require './lib/generala'
 @@dado3 = 1
 @@dado4 = 1
 @@dado5 = 4
+
+@@n1 = 0
+@@n2 = 0
+@@n3 = 0
+@@n4 = 0
+@@n5 = 0
+@@n6 = 0
+
 @@jugador1 = ""
 @@poker = ""
 
@@ -29,6 +37,7 @@ post "/tirar" do
     @@dado4 = obtenerValorDado
     @@dado5 = obtenerValorDado
     @@poker = validaPoker
+    inicializar_contador
     erb :tablero
 end
 
