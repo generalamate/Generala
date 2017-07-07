@@ -23,4 +23,7 @@ Then(/^espero ver "(.*?)" es (\d+)$/) do |dado, valor|
   last_response.body.should =~ /#{texto}/m
 end
 
+When(/^Todos los dados tienen mismo valor$/) do
+  pending # express the regexp above with the code you wish you had
+end
 
