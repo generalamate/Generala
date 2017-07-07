@@ -9,6 +9,8 @@ require './lib/generala'
 @@dado4 = 1
 @@dado5 = 1
 
+@@Generala = "Si"
+
 get "/generala" do
     @@dado1 = 1
     @@dado2 = 1

@@ -23,11 +23,10 @@ And espero ver "Dado 3"
 And espero ver "Dado 4"
 And espero ver "Dado 5"
 
-#Scenario: Valida generala
-#Given Ingreso a la Generala
-#And Tira dado
-#When Todos los dados tienen mismo valor
-#Then espero ver "Generala" es "Si"
+Scenario: Valida generala
+Given Ingreso a la Generala
+When Tira todos los dados iguales
+Then espero ver "Generala" es "Si"
 
 
 #Scenario: Seleccionar un dado

@@ -27,3 +27,8 @@ When(/^Todos los dados tienen mismo valor$/) do
   pending # express the regexp above with the code you wish you had
 end
 
+When(/^Tira todos los dados iguales$/) do
+  visit '/tirar/22222'
+end
+
+
