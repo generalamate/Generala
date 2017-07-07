@@ -5,8 +5,9 @@ require './lib/generala'
 @@dado2 = 1
 @@dado3 = 1
 @@dado4 = 1
-@@dado5 = 1
+@@dado5 = 4
 @@jugador1 = ""
+@@poker = ""
 
 get "/generala" do
     erb :tablero
@@ -18,6 +19,7 @@ post "/tirar" do
     @@dado3 = obtenerValorDado
     @@dado4 = obtenerValorDado
     @@dado5 = obtenerValorDado
+    @@poker = validaPoker
     erb :tablero
 end
 

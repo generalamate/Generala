@@ -1,4 +1,5 @@
 require './lib/generala'
+
 describe "Generala" do
     it "obtener valor dado" do
       valor = obtenerValorDado
@@ -9,4 +10,10 @@ describe "Generala" do
       nombreJ1 = guardarNombreJ1("Walter") 
       expect(nombreJ1).to eq "Walter"   
  end
+
+ it "validar poker" do
+      poker = validaPoker
+      expect(poker).to eq "si"   
+ end
+
 end
