@@ -1,5 +1,5 @@
 require 'sinatra'
 
-get '/' do
-    
+get "/generala" do
+    erb :tablero
 end
