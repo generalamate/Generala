@@ -23,4 +23,14 @@ Then(/^espero ver "(.*?)" es (\d+)$/) do |dado, valor|
   last_response.body.should =~ /#{texto}/m
 end
 
+When(/^Guardo Jugador$/) do
+  click_button("Guardar Jugador 1")
+end
+
+
+Then(/^espero ver "(.*?)" es Juanito$/) do |nombre|
+  last_response.body.should =~ /#{nombre}/m
+end
+
+
 
