@@ -8,6 +8,7 @@ require './lib/generala'
 @@dado3 = 1
 @@dado4 = 1
 @@dado5 = 1
+@@jugador1 = ""
 
 @@Generala = "Si"
 
@@ -35,5 +36,8 @@ get "/tirar/:dados" do |dados|
     @@dado3 = dados[2]
     @@dado4 = dados[3]
     @@dado5 = dados[4]
+
+post "/guardarJugador1" do
+    @@jugador1 = guardarNombreJ1(params['nombre_jug_1'])
     erb :tablero
 end

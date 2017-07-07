@@ -1,6 +1,11 @@
 <html>
 
 <body>
+<p>Jugador 1: <%= @@jugador1%> </p>
+<form method="post" action="/guardarJugador1">
+	Nombre : <input type="text" name="nombre_jug_1">
+	<input type="submit" value="Guardar Jugador 1">
+</form>
 <p>Dado 1:<%= @@dado1%> </p>
 <p>Dado 2:<%= @@dado2%> </p>
 <p>Dado 3:<%= @@dado3%> </p>
