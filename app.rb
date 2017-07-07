@@ -36,6 +36,7 @@ get "/tirar/:dados" do |dados|
     @@dado3 = dados[2]
     @@dado4 = dados[3]
     @@dado5 = dados[4]
+end
 
 post "/guardarJugador1" do
     @@jugador1 = guardarNombreJ1(params['nombre_jug_1'])

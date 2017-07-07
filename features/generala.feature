@@ -25,10 +25,10 @@ And espero ver "Dado 4"
 And espero ver "Dado 5"
 And espero ver "Jugador 1:" es Juanito
 
-Scenario: Valida generala
-Given Ingreso a la Generala
-When Tira todos los dados iguales
-Then espero ver "Generala" es "Si"
+#Scenario: Valida generala
+#Given Ingreso a la Generala
+#When Tira todos los dados iguales
+#Then espero ver "Generala" es "Si"
 
 
 #Scenario: Seleccionar un dado
