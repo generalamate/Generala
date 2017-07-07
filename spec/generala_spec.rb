@@ -4,5 +4,6 @@ describe "Generala" do
       valor = obtenerValorDado
       expect(valor).to be_between(1,6)
     end
+    
 
 end
