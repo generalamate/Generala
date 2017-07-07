@@ -17,3 +17,10 @@ When(/^Tira dado$/) do
   click_button("Tirar")
 end
 
+
+Then(/^espero ver "(.*?)" es (\d+)$/) do |dado, valor|
+  texto = dado + ":" + valor
+  last_response.body.should =~ /#{texto}/m
+end
+
+

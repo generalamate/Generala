@@ -1,11 +1,11 @@
 require 'sinatra'
 require './lib/generala'
 
-@@dado1 = 0
-@@dado2 = 0
-@@dado3 = 0
-@@dado4 = 0
-@@dado5 = 0
+@@dado1 = 1
+@@dado2 = 1
+@@dado3 = 1
+@@dado4 = 1
+@@dado5 = 1
 
 get "/generala" do
     erb :tablero
